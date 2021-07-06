@@ -98,8 +98,9 @@ color: var(--mainText);
   
   @keyframes typing {
 	from {
+		opacity: 20s;
 	  width: 0
-	  
+	
 	}
   }
 	  
@@ -343,11 +344,6 @@ color: var(--mainText);
 	margin-left: 20px;
 	text-align: center;
 	text-decoration: none;
-  }
-  
-/* Add a hover effect if you want */
-.fa:hover {
-	opacity: 1;
   }
   
 #social_img{
