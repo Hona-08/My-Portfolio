@@ -51,7 +51,7 @@
 				</div>
 
 				<div class="left-column">
-					<img id="profile_pic" src="images/my pic.jpg">
+					<img id="profile_pic" src="images/my pic.jpg" >
 					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
 					<div id="theme-options-wrapper">
@@ -207,24 +207,24 @@
 			<a href=""></a>
 			<h3 style="text-align: center;">Get In Touch</h3>
 
-			<form id="contact-form" action="https://formspree.io/f/mzbyajvn"
- 				 method="POST">
+			<form id="contact-form" action="https://formspree.io/f/mzbyajvn" method="POST">
 				<a name="contact"></a>
-
-				<label>Name</label>
-				<input class="input-field" type="text" name="name">
-
-				<label>Subject</label>
-				<input class="input-field" type="text" name="subject">
-
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
-
-				<label>Message</label>
-				<textarea class="input-field" name="message"></textarea>
-
+			
+				<label for="name">Name</label>
+				<input class="input-field" type="text" name="name" id="name" required>
+			
+				<label for="subject">Subject</label>
+				<input class="input-field" type="text" name="subject" id="subject" required>
+			
+				<label for="email">Email</label>
+				<input class="input-field" type="email" name="email" id="email" required>
+			
+				<label for="message">Message</label>
+				<textarea class="input-field" name="message" id="message" required></textarea>
+			
 				<input id="submit-btn" type="submit" value="Send">
 			</form>
+			
 		</div>
 	</section> 
 
