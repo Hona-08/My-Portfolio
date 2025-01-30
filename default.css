@@ -327,23 +327,24 @@ h6 { font-size: 16px;}
 }
 
 .social-links{
-	display: grid;
-	align-content: center;
-	text-align: center;
+	display: inline-flex;
+    justify-content: center;
+    width: 100%;
 }
 .fa-github {
-	display: block;
-	padding: 10px;
-	font-size: 30px;
-	width: 100%;
+	display: flex;
+	/* padding: 10px; */
+	font-size: 50px;
+	/* width: 50%; */
+	margin-left: 555px;
 	text-align: center;
 	text-decoration: none;
   }
   .fa-linkedin {
-	display: block;
-	font-size: 30px;
+	display: flex;
+	font-size: 50px;
 	width: 100%;
-	margin-left: 20px;
+	margin-left: 30px;
 	text-align: center;
 	text-decoration: none;
   }
@@ -402,6 +403,7 @@ h6 { font-size: 16px;}
 	margin-bottom: 50px;
 
 }
+
 
 #contact-form label{
 	line-height: 2.7em;
