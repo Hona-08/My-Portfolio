@@ -1,34 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Game Store</title>
-
+	<title>Game Store Blog</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-
 	<link rel="stylesheet" type="text/css" href="default.css">
 
-
 	<style type="text/css">
-		.img-container{
-			max-width: 600px;
+		body {
+			font-family: 'Roboto Mono', monospace;
+			background-color: #121212;
+			color: #ffffff;
+			margin: 0;
+			padding: 0;
+			transition: background 0.3s, color 0.3s;
 		}
 
-		img{
-			width: 100%
+		.nav-wrapper {
+			background: #1e1e1e;
+			padding: 15px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
 		}
 
+		#navigation li {
+			display: inline;
+			margin-right: 15px;
+		}
+
+		#navigation a {
+			color: #ffffff;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.img-container {
+			max-width: 800px;
+			margin: 20px auto;
+			border-radius: 10px;
+			box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+		}
+
+		img {
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		.main-container {
+			width: 80%;
+			margin: auto;
+			text-align: center;
+			padding-top: 20px;
+		}
+
+		h3, h5 {
+			color: #ffcc00;
+		}
+
+		p {
+			color: white;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			color: white;
+		}
+
+		ul li {
+			background: #1e1e1e;
+			color: white;
+			margin: 10px 0;
+			padding: 10px;
+			border-radius: 5px;
+		}
+
+		/* Toggle Button */
+		.toggle-icon {
+			cursor: pointer;
+			font-size: 16px;
+			color: #ffcc00;
+		}
+
+		.light-mode {
+			background-color: #ffffff;
+			color: #000000;
+		}
+		.light-mode p {
+			color: #000000;
+		}
+
+		.light-mode .nav-wrapper {
+			background: #f0f0f0;
+		}
+
+		.light-mode .toggle-icon {
+			color: white;
+		}
+
+		.light-mode ul li {
+			background: #dddddd;
+			color: #000000;
+		}
 	</style>
-
 </head>
 <body>
 	<div class="nav-wrapper">
-
-		<!-- Link around dots-wrapper added after tutorial video -->
 		<a href="index.html">
 			<div class="dots-wrapper">
 				<div id="dot-1" class="browser-dot"></div>
@@ -36,68 +117,61 @@
 				<div id="dot-3" class="browser-dot"></div>
 			</div>
 		</a>
-
 		<ul id="navigation">
 			<li><a href="index.html#contact">Contact</a></li>
-
+			<li><span class="toggle-icon" onclick="toggleMode()">Mode:🌙☀️</span></li>
 		</ul>
 	</div>
 
 	<div class="main-container">
-		<br>
-
 		<div class="img-container">
 			<img src="images/home.png">
 		</div>
-		
 		<h3>Game Store</h3>
-
-		<p>This was a project I made as college project when I first learned python. I was the sole creator/developer for the first year of the project.
-		<br>
-		<br>
-		The system stored games where user can buy games online with blogs though online payment method is not added yet.
-		<br>
-		<br>
-		Customers had the ability to view all their data with a dynamic search form, trending games, featured games  and  add blogs to the games.
-		<br>
-		<br>
-		I worked on this system for 3 months learning new things and adding some sparks on the project.</p>
-
-		<h5>Technologies:</h5>
+		<p>A project developed in college using Python and Django. It allows users to browse and purchase games online while integrating blogs.</p>
+		<h5>Technologies Used:</h5>
 		<ul>
-			<li>- Python</li>
-			<li>- Django</li>
-			<li>- Html, CSS & JavaScript</li> 
-			<li>- Postgres</li>
+			<li>Python - Backend logic and functionality</li>
+			<li>Django - Web framework for handling requests and rendering pages</li>
+			<li>HTML, CSS & JavaScript - Frontend design and interactivity</li>
+			<li>Postgres - Database for storing game and user information</li>
 		</ul>
 
-
-		<h5>Game Store Admin Panel</h5>
+		<h5>Game Store Admin Panel - Manage Your Content Easily</h5>
+		<p>The admin panel allows authorized users to manage game listings, blogs, and customer data efficiently.</p>
 		<div class="img-container">
 			<img src="images/admin.png">
 		</div>
 
-		<h6>Sample Cart System</h5>
+		<h5>Sample Cart System - Seamless Shopping Experience</h5>
+		<p>Users can add games to their cart and proceed to checkout, enhancing the overall shopping experience.</p>
 		<div class="img-container">
 			<img src="images/cart.png">
 		</div>
 
-		<h5>Blogs</h5>
+		<h5>Blogs - Stay Updated with Gaming News</h5>
+		<p>Read and contribute to blogs related to trending games, industry news, and personal gaming experiences.</p>
 		<div class="img-container">
 			<img src="images/blog.png">
 		</div>
 
-		<h5>All Games</h5>
+		<h5>All Games - Explore the Collection</h5>
+		<p>Browse through an extensive catalog of games with detailed descriptions and user ratings.</p>
 		<div class="img-container">
 			<img src="images/all.png">
 		</div>
 
-		<h5>Customer Dashboard</h5>
+		<h5>Customer Dashboard - Personalized User Experience</h5>
+		<p>The dashboard provides users with order history, saved games, and personalized recommendations.</p>
 		<div class="img-container">
 			<img src="images/customer-dash.png">
 		</div>
-
 	</div>
 
+	<script>
+		function toggleMode() {
+			document.body.classList.toggle('light-mode');
+		}
+	</script>
 </body>
 </html>
