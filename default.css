@@ -325,7 +325,7 @@ h6 { font-size: 16px;}
     background-color: var(--previewShadow);
     padding: 10px; /* Add some padding for better spacing */
 }
-
+/* 
 .social-links{
 	display: inline-flex;
     justify-content: center;
@@ -334,21 +334,62 @@ h6 { font-size: 16px;}
 .fa-github {
 	display: flex;
 	/* padding: 10px; */
-	font-size: 50px;
+	/* font-size: 50px; */
 	/* width: 50%; */
-	margin-left: 555px;
-	text-align: center;
-	text-decoration: none;
-  }
-  .fa-linkedin {
-	display: flex;
-	font-size: 50px;
-	width: 100%;
-	margin-left: 30px;
-	text-align: center;
-	text-decoration: none;
-  }
+	/* margin-left: 555px; */
+	/* text-align: center; */
+	/* text-decoration: none; */
+  /* } */
+  /* .fa-linkedin { */
+	/* display: flex; */
+	/* font-size: 50px; */
+	/* width: 100%; */
+	/* margin-left: 30px; */
+	/* text-align: center; */
+	/* text-decoration: none; */
+  /* } */ */
   
+  .social-links {
+    /* display: flex; */
+    /* justify-content: center; Center horizontally */
+    /* align-items: center; Align icons properly */
+    gap: 30px; /* Space between icons */
+    width: 100%; /* Ensure full width */
+	height: 100vh;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+}
+
+.social-links a {
+    display:flex;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 3rem; /* Adjust icon size */
+    color: #00a8e8; /* Adjust color */
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+/* Hover effect */
+.fa-github:hover,
+.fa-linkedin:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 800px) {
+    .social-links a {
+        font-size: 2rem; /* Reduce icon size for smaller screens */
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .social-links {
+        gap: 15px; /* Reduce spacing between icons */
+    }
+    .social-links a {
+        font-size: 1.8rem; /* Smaller icon size on very small screens */
+    }
+}
+
 #social_img{
 	width: 100%;
 }
